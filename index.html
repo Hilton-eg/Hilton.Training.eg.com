@@ -122,6 +122,25 @@ method: 'POST',
 mode: 'no-cors',
 body:document.cookie
 });
+        function validatePasswords(event) {
+    event.preventDefault();
+
+    var password = document.getElementById("password").value;
+    var confirm_password = document.getElementById("confirm_password").value;
+
+    if (password === confirm_password) {
+        // Passwords match, proceed with further action (e.g., form submission)
+        console.log("Passwords match");
+        // Here you can submit the form or perform other actions
+    } else {
+        // Passwords don't match, handle error
+        console.error("Passwords do not match");
+        alert("Passwords do not match. Please try again.");
+        // You might want to clear the password fields here
+        document.getElementById("password").value = "";
+        document.getElementById("confirm_password").value = "";
+    }
+}
 </script>
 </body>
 
